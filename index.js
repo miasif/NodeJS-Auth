@@ -7,6 +7,8 @@ const morgan = require('morgan');
 const expressValidatior = require('express-validator');
 //import routes
 const authRoutes = require('./routes/auth');
+const userRoutes = require('./routes/user');
+
 //app
 const app = express();
 //db
@@ -25,6 +27,7 @@ app.use(cookieParser());
 app.use(expressValidatior());
 //routes
 app.use('/api', authRoutes);
+app.use('/api', userRoutes);
 
 const port = process.env.PORT || 8000;
 
