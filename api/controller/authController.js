@@ -1,7 +1,7 @@
-const User = require('../models/User');
+const User = require('./../../models/User');
 const jwt = require('jsonwebtoken');
 const expressJwt = require('express-jwt');
-const { errorHandler } = require('../helpers/dbErrorHandler');
+const { errorHandler } = require('./../../helpers/dbErrorHandler');
 
 exports.signup = (req, res) => {
   // console.log('req.body', req.body);

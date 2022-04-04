@@ -4,7 +4,7 @@ const {
   requireSignin,
   isAuth,
   isAdmin,
-} = require('../controllers/authController');
+} = require('./../api/controller/authController');
 const { userById } = require('../controllers/userController');
 
 router.get('/secret/:userId', requireSignin, isAuth, isAdmin, (req, res) => {

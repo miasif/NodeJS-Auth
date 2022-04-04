@@ -6,7 +6,8 @@ const cookieParser = require('cookie-parser');
 const morgan = require('morgan');
 const expressValidatior = require('express-validator');
 //import routes
-const authRoutes = require('./routes/auth');
+const apiRouter = require('./api/routes/api');
+
 const userRoutes = require('./routes/user');
 const homeRoutes = require('./routes/home');
 
@@ -34,8 +35,9 @@ app.use(expressValidatior());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 //routes
-app.use('/api', authRoutes);
-app.use('/api', userRoutes);
+app.use('/api', apiRouter);
+
+app.use('/users', userRoutes);
 app.use('/', homeRoutes);
 
 const port = process.env.PORT || 8000;

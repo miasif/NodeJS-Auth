@@ -5,9 +5,8 @@ const {
   signin,
   signout,
   requireSignin,
-} = require('../controllers/authController');
-const { userSignupValidator } = require('../validator/index');
-
+} = require('./../controller/authController');
+const { userSignupValidator } = require('./../../validator/index');
 router.post('/signup', userSignupValidator, signup);
 router.post('/signin', signin);
 router.get('/signout', signout);
