@@ -1,74 +1,207 @@
-<%- include('./includes/head.ejs')  %> 
-  <body data-sidebar="dark">
-    <div id="layout-wrapper">
-   <%- include('./includes/header.ejs')  %> 
-   <%- include('./includes/sidebar.ejs')  %> 
-
-      <div class="main-content">
-        <div class="page-content">
-          <div class="container-fluid">
-            <!-- start page title -->
-            <div class="row">
-              <div class="col-12">
-                <div
-                  class="page-title-box d-flex align-items-center justify-content-between"
-                >
-                  <h4 class="mb-0 font-size-18">Getting Started</h4>
-
-                  <div class="page-title-right">
-                    <ol class="breadcrumb m-0">
-                      <li class="breadcrumb-item">
-                        <a href="javascript: void(0);">Docs</a>
-                      </li>
-                      <li class="breadcrumb-item active">Getting Started</li>
-                    </ol>
+<%- include('./includes/head.ejs') %> <%- include('./includes/header.ejs') %>
+<%- include('./includes/sidebar.ejs') %>
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+  <div class="container-full">
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-xl-2 col-6">
+          <div class="box overflow-hidden pull-up">
+            <div class="box-body">
+              <div class="icon bg-primary-light rounded w-60 h-60">
+                <i
+                  class="text-primary mr-0 font-size-24 mdi mdi-account-multiple"
+                ></i>
+              </div>
+              <div>
+                <p class="text-mute mt-20 mb-0 font-size-16">New Customers</p>
+                <h3 class="text-white mb-0 font-weight-500">
+                  3400
+                  <small class="text-success"
+                    ><i class="fa fa-caret-up"></i> +2.5%</small
+                  >
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2 col-6">
+          <div class="box overflow-hidden pull-up">
+            <div class="box-body">
+              <div class="icon bg-warning-light rounded w-60 h-60">
+                <i class="text-warning mr-0 font-size-24 mdi mdi-car"></i>
+              </div>
+              <div>
+                <p class="text-mute mt-20 mb-0 font-size-16">Sold Cars</p>
+                <h3 class="text-white mb-0 font-weight-500">
+                  3400
+                  <small class="text-success"
+                    ><i class="fa fa-caret-up"></i> +2.5%</small
+                  >
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2 col-6">
+          <div class="box overflow-hidden pull-up">
+            <div class="box-body">
+              <div class="icon bg-info-light rounded w-60 h-60">
+                <i class="text-info mr-0 font-size-24 mdi mdi-sale"></i>
+              </div>
+              <div>
+                <p class="text-mute mt-20 mb-0 font-size-16">Sales Lost</p>
+                <h3 class="text-white mb-0 font-weight-500">
+                  $1,250
+                  <small class="text-danger"
+                    ><i class="fa fa-caret-down"></i> -0.5%</small
+                  >
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2 col-6">
+          <div class="box overflow-hidden pull-up">
+            <div class="box-body">
+              <div class="icon bg-danger-light rounded w-60 h-60">
+                <i
+                  class="text-danger mr-0 font-size-24 mdi mdi-phone-incoming"
+                ></i>
+              </div>
+              <div>
+                <p class="text-mute mt-20 mb-0 font-size-16">Inbound Call</p>
+                <h3 class="text-white mb-0 font-weight-500">
+                  1,460
+                  <small class="text-danger"
+                    ><i class="fa fa-caret-up"></i> -1.5%</small
+                  >
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2 col-6">
+          <div class="box overflow-hidden pull-up">
+            <div class="box-body">
+              <div class="icon bg-success-light rounded w-60 h-60">
+                <i
+                  class="text-success mr-0 font-size-24 mdi mdi-phone-outgoing"
+                ></i>
+              </div>
+              <div>
+                <p class="text-mute mt-20 mb-0 font-size-16">Outbound Call</p>
+                <h3 class="text-white mb-0 font-weight-500">
+                  1,700
+                  <small class="text-success"
+                    ><i class="fa fa-caret-up"></i> +0.5%</small
+                  >
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2 col-6">
+          <div class="box overflow-hidden pull-up">
+            <div class="box-body">
+              <div class="icon bg-light rounded w-60 h-60">
+                <i class="text-white mr-0 font-size-24 mdi mdi-chart-line"></i>
+              </div>
+              <div>
+                <p class="text-mute mt-20 mb-0 font-size-16">Total Revune</p>
+                <h3 class="text-white mb-0 font-weight-500">
+                  $4,500k
+                  <small class="text-success"
+                    ><i class="fa fa-caret-up"></i> +2.5%</small
+                  >
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-12">
+          <div class="box">
+            <div class="box-header">
+              <h4 class="box-title">Earning Summary</h4>
+            </div>
+            <div class="box-body py-0">
+              <div class="row">
+                <div class="col-lg-6 col-12">
+                  <div class="box no-shadow mb-0">
+                    <div class="box-body px-0">
+                      <div
+                        class="d-flex justify-content-start align-items-center"
+                      >
+                        <div>
+                          <div id="chart41"></div>
+                        </div>
+                        <div>
+                          <h5>Top Order</h5>
+                          <h4 class="text-white my-0 font-weight-500">$39k</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                  <div class="box no-shadow mb-0">
+                    <div class="box-body px-0">
+                      <div
+                        class="d-flex justify-content-start align-items-center"
+                      >
+                        <div>
+                          <div id="chart42"></div>
+                        </div>
+                        <div>
+                          <h5>Average Order</h5>
+                          <h4 class="text-white my-0 font-weight-500">$24k</h4>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
+              <div id="charts_widget_43_chart"></div>
             </div>
-            <!-- end page title -->
-
-            <div class="card">
-              <div class="card-body">
-                <div class="p-lg-3">
-                  <h5 class="mt-0 mb-2">Introduction</h5>
-                  <p>
-                    Minible is a fully featured, multi-purpose admin template
-                    built with Bootstrap v5.0.0-beta2, HTML5, CSS3 and JQuery
-                    and Nodejs ( EJS – Embedded Javascript Templates). It’s a
-                    fully responsive and have the very clean user interface that
-                    comes with a huge collection of components, widgets, UI
-                    elements.
-                  </p>
-                </div>
-
-                <div class="p-lg-3">
-                  <h5 class="mt-0 mb-2">Structure</h5>
-                  <p>
-                    Extract the zip file you received after purchase and you
-                    would find the exact below files and folders:
-                  </p>
-
-           
-            
-                </div>
-                <!-- end padding-->
-              </div>
-              <!--end card body-->
-            </div>
-            <!-- end card-->
           </div>
-          <!-- container-fluid -->
         </div>
-        <!-- End Page-content -->
-
-     <%- include('./includes/footer.ejs')  %> 
+        <div class="col-xl-6 col-12">
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              <div class="box overflow-hidden">
+                <div class="box-body pb-0">
+                  <div>
+                    <h2 class="text-white mb-0 font-weight-500">18.8k</h2>
+                    <p class="text-mute mb-0 font-size-20">Total users</p>
+                  </div>
+                </div>
+                <div class="box-body p-0">
+                  <div id="revenue1"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12">
+              <div class="box overflow-hidden">
+                <div class="box-body pb-0">
+                  <div>
+                    <h2 class="text-white mb-0 font-weight-500">35.8k</h2>
+                    <p class="text-mute mb-0 font-size-20">
+                      Average reach per post
+                    </p>
+                  </div>
+                </div>
+                <div class="box-body p-0">
+                  <div id="revenue2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- end main content-->
-    </div>
-    <!-- END layout-wrapper -->
-
-    <%- include('./includes/end.ejs')  %> 
-
-  </body>
-</html>
+    </section>
+    <!-- /.content -->
+  </div>
+</div>
+<!-- /.content-wrapper -->
+<%- include('./includes/footer.ejs') %> <%- include('./includes/end.ejs') %>
